@@ -23,3 +23,11 @@ extension=php_pdo_sqlsrv_81_nts.so
 //Doi php CyberPanel
 rm -f /usr/bin/php
 ln -s /usr/local/lsws/lsphp74/bin/php /usr/bin/php
+
+
+//Fastpanel
+php8.1 -> /opt/php81/lib/php/extensions/no-debug-non-zts-20210902
+thay
+trong site->manual setting->backend
+php_admin_value[extension] = "php_sqlsrv_81_nts.so"
+php_admin_value[extension] = "php_pdo_sqlsrv_81_nts.so"
