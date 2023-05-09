@@ -27,11 +27,11 @@ ln -s /usr/local/lsws/lsphp74/bin/php /usr/bin/php
 
 //Fastpanel
 php8.1 -> /opt/php81/lib/php/extensions/no-debug-non-zts-20210902
-copy sqlsrv81.ini /opt/php81/conf.d
+cp sqlsrv81.ini /opt/php81/conf.d
 
 /usr/lib/php/20190902/
-copy sqlsrv74.ini /etc/php/7.4/fpm/conf.d
-
+cp sqlsrv74.ini /etc/php/7.4/fpm/conf.d
+cp sqlsrv74.ini /etc/php/7.4/apache2/conf.d
 thay
 trong site->manual setting->backend
 php_admin_value[extension] = "php_sqlsrv_81_nts.so"
